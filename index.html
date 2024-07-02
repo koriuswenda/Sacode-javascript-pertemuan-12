@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="nama-user">Welcome</h1>
+
+    <label>Nama User</label>
+
+    <input id="input-user">
+
+    <button id="submit-user">Klik!</button>
+
+    <script>
+
+        document.getElementById("submit-user").onclick = () => {
+            const simpanData = document.getElementById("input-user").value;
+            document.getElementById("nama-user").textContent = `Hello ${simpanData}`;
+        }
+
+    </script>
+
+</body>
+
+</html>
